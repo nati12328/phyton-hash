@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtegeSenha | Segurança Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🔐 ProtegeSenha</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#projeto">Projeto</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-text">
+                <span class="tag">SEGURANÇA DIGITAL</span>
+                <h1>Suas informações merecem <span>proteção.</span></h1>
+                <p>
+                    Descubra como funciona a criptografia e aprenda
+                    a transformar números em informações escondidas.
+                </p>
+                <a href="#projeto" class="hero-button">Começar agora →</a>
+            </div>
+
+            <div class="hero-icon">
+                <div class="lock">🔐</div>
+                <div class="circle circle-one"></div>
+                <div class="circle circle-two"></div>
+            </div>
+        </section>
+
+        <section class="project" id="projeto">
+            <div class="section-title">
+                <span class="tag">EXPERIMENTE</span>
+                <h2>Criptografe sua senha</h2>
+                <p>Digite uma sequência numérica fictícia e veja a transformação.</p>
+            </div>
+
+            <div class="security-card">
+                <label for="senha">Digite sua sequência numérica</label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Exemplo: 123456"
+                    inputmode="numeric"
+                    autocomplete="off"
+                    maxlength="30"
+                >
+
+                <div class="buttons">
+                    <button id="btnCriptografar" class="primary">
+                        Criptografar
+                    </button>
+
+                    <button id="btnDescriptografar" class="secondary">
+                        Descriptografar
+                    </button>
+                </div>
+
+                <div class="result">
+                    <span>RESULTADO</span>
+                    <h3 id="resultado">Seu resultado aparecerá aqui</h3>
+                    <p id="explicacao">
+                        Aguardando uma sequência numérica...
+                    </p>
+                </div>
+
+                <button id="btnLimpar" class="clear">
+                    Limpar campos
+                </button>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="section-title">
+                <span class="tag">APRENDA</span>
+                <h2>O que é criptografia?</h2>
+            </div>
+
+            <div class="info-cards">
+                <article class="info-card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Criptografia</h3>
+                    <p>
+                        É um processo que transforma informações
+                        para dificultar o acesso de pessoas não autorizadas.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">🔓</div>
+                    <h3>Descriptografia</h3>
+                    <p>
+                        É o processo inverso, utilizado para recuperar
+                        a informação original.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Segurança</h3>
+                    <p>
+                        A proteção de dados ajuda a manter informações
+                        pessoais longe de acessos indevidos.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>Como funciona nossa regra?</h2>
+            <p>Cada algarismo é substituído pelo próximo.</p>
+
+            <div class="example-numbers">
+                <div>
+                    <span>ORIGINAL</span>
+                    <strong>123456</strong>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div>
+                    <span>CRIPTOGRAFADA</span>
+                    <strong>234567</strong>
+                </div>
+            </div>
+
+            <p class="note">
+                Exemplo educativo: o número 9 passa a ser 0.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <h3>🔐 ProtegeSenha</h3>
+        <p>Projeto educacional de programação e segurança digital.</p>
+        <p class="copyright">Desenvolvido com HTML, CSS e JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
